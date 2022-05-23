@@ -26,12 +26,15 @@ header {
     margin: 0 auto;
 }
 
-.fig-star img, .fig-wars img {
+.fig-star img {
     width: 18vw;
+}
+.fig-wars img {
+    width: 19vw;
 }
 .fig-kylo-ren {
     position: absolute;
-    right: 5vw;
+    right: 6vw;
 }
 .fig-kylo-ren img {
     width: 60vw;
@@ -223,6 +226,117 @@ header {
 .navi-struct li:hover {
     color: white;
     background-color: #ff5a56;
+}
+
+.attributes {
+    background-color: #2d2d2d;
+    width: 100%;
+    padding: 6vw 0 12vw 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pictures-of-attributes {
+    width: 85vw;
+    margin: 0 auto;
+}
+
+.title-attributes h2 {
+    padding-left: 9vw;
+    color: white;
+    font-size: 1.8vw;
+    text-transform: uppercase;
+}
+
+.grid-of-pictures {
+    width: 100%;
+    display: flex;
+    margin: 3vw 0;
+}
+.second-box {
+    display: flex;
+}
+
+.battle {
+    background-image: url("./assets/134840-games-review-star-wars-battlefront-review-image1-NkRao9Jw12.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 42.75vw;
+    height: 25vw;
+}
+.security {
+    background-image: url("./assets/Security_stormtrooper_HUC2-FF-003301.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 21.15vw;
+    height: 12.5vw;
+}
+.naves {
+    background-image: url("./assets/naves\ em\ batalha\ star\ wars.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 21.15vw;
+    height: 12.5vw;
+}
+.star-game {
+    background-image: url("./assets/starGame.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 21.15vw;
+    height: 12.5vw;
+}
+.strorm-trup {
+    background-image: url("./assets/stormTrup.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 21.15vw;
+    height: 12.5vw;
+}
+
+.battle div, .security div, .naves div, .star-game div, .strorm-trup div {
+    padding: 1.2vw;
+    color: white;
+    height: 100%;
+    background-image: linear-gradient(rgba(255,90,86,0.60), rgba(255,90,86,0.60));
+    cursor: pointer;
+    transition: 0.4s all;
+    opacity: 0;
+}
+.battle div:hover, .security div:hover, .naves div:hover, .star-game div:hover, .strorm-trup div:hover {
+    opacity: 1;
+    transform: scale(1.02);
+}
+.battle h2, .security h2, .naves h2, .star-game h2, .strorm-trup h2 {
+    width: 8vw;
+    font-size: 1.6vw;
+    text-transform: uppercase;
+}
+.battle p, .security p, .naves p, .star-game p, .strorm-trup p {
+    width: 20vw;
+    margin: 0.8vw 0 1.5vw 0;
+    font-size: .9vw;
+}
+.battle button, .security button, .naves button, .star-game button, .strorm-trup button {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    width: 10vw;
+    padding: 0.5vw 2vw;
+    cursor: pointer;
+    font-size: 1.2vw;
+}
+
+.hierarchy {
+    width: 85vw;
+    margin: 0 auto;
+}
+.hierarchy img {
+    width: 100%;
+    object-fit: cover;
 }
 
 @media(max-width:800px){
