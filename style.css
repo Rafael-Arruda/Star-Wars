@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -128,7 +129,7 @@ header {
     cursor: pointer;
 }
 button:hover {
-    opacity: 0.8;
+    cursor: pointer;
 }
 
 .description {
@@ -231,7 +232,7 @@ button:hover {
 .attributes {
     background-color: #2d2d2d;
     width: 100%;
-    padding: 6vw 0 12vw 0;
+    padding: 6vw 0 6vw 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -342,6 +343,75 @@ button:hover {
     object-fit: cover;
 }
 
+.tittle-how-to-play {
+    margin-top: 10vw;
+    text-align: center;
+}
+.tittle-how-to-play h2 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 2vw;
+}
+
+.fig-stortm-trooper{
+    position: relative;
+    top: -17vw;
+}
+.fig-stortm-trooper img {
+    width: 22vw;
+}
+
+.box-how-to-play {
+    width: 100%;
+    height: 24vw;
+    display: flex;
+    justify-content: center;
+}
+.instructions {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60vw;
+    height: 18vw;
+    padding-top: 2vw;
+}
+.instructions h2 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 2.5vw;
+}
+.instructions button {
+    background-color: black;
+    margin-top: 1.5vw;
+    color: white;
+    width: 10vw;
+    padding:0.8vw 0;
+    font-size: 1.1vw;
+    border: none;
+    text-transform: uppercase;
+}
+.instructions p {
+    width: 7.5vw;
+    margin: 1.5vw auto 0 auto;
+    font-size: 0.9vw;
+    text-align: center;
+}
+.line-after-instruction {
+    width: 4.5vw;
+    height: 0.2vw;
+    margin: 1.5vw auto 0 auto;
+    background-color: black;
+}
+
+.instructions button:hover {
+    background-color: #ff5a56;
+}
+.instructions div:hover .line-after-instruction {
+    background-color: #ff5a56;
+}
+
+/*Início do @media*/
+
 @media(max-width:800px){
     .start-playing {
         flex-direction: column;
@@ -433,6 +503,55 @@ button:hover {
         font-size: 3vw;
     }
     .hierarchy {
-        width: 100vw;
+        width: 100%;
+    }
+
+    .tittle-how-to-play h2 {
+        width: 30vw;
+        font-size: 3vw;
+        margin-left: auto;
+        margin-right: 15vw;
+    }
+    
+    .fig-stortm-trooper{
+        top: -15vw;
+        left: -24vw;
+    }   
+    .fig-stortm-trooper img {
+        width: 70vw;
+    }
+    .box-how-to-play {
+        height: 90vw;
+    }
+    .instructions {
+        position: relative;
+        right: 16vw;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+    .instructions div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .instructions h2 {
+        font-size: 4vw;
+    }
+    .instructions button {
+        width: 30vw;
+        padding: 2vw 0;
+        font-size: 2.5vw;
+        margin-top: 1vw;
+    }
+    .instructions p {
+        width: 20vw;
+        font-size: 2.3vw;
+        margin-top: 1vw;
+    }
+    .line-after-instruction {
+        width: 10vw;
+        height: 0.4vw;
+        margin: 1vw auto 0 auto;
     }
 }
