@@ -473,6 +473,13 @@ button:hover {
         background-size: 48vw 85vw;
     }
 
+    .navi-struct h2 {
+        font-size: 3vw;
+    }
+    .navi-struct li {
+        font-size: 1.8vw;
+    }
+
     .grid-of-pictures {
         flex-direction: column;
     }
