@@ -410,6 +410,68 @@ button:hover {
     background-color: #ff5a56;
 }
 
+/*Inicio da footer*/
+
+footer {
+    display: flex;
+    height: 43vw;
+}
+
+.footer-content{
+    width: 60vw;
+    background-color: #ff5a56;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-content h2 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.8vw;
+    margin-bottom: 1vw;
+}
+.footer-content p {
+    color: white;
+    font-size: 1vw;
+    opacity: 0.8;
+}
+.footer-content-box1, .footer-content-box2 {
+    width: 30vw;
+    height: 18vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.fig-darth-vader {
+    position: relative;
+    top: -7vw;
+    right: 8vw;
+}
+.fig-darth-vader img {
+    width: 38vw;
+}
+.fig-star-wars-footer img {
+    width: 15vw;
+}
+
+.download {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.fig-google-play img, .fig-app-store img {
+    width: 14.5vw;
+    object-fit: cover;
+}
+
+.line-division-footer {
+    width: 30vw;
+    height: 0.2vw;
+    background-color: #d74430;
+}
 /*Início do @media*/
 
 @media(max-width:800px){
@@ -560,5 +622,48 @@ button:hover {
         width: 10vw;
         height: 0.4vw;
         margin: 1vw auto 0 auto;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+    .footer-content {
+        width: 100%;
+        padding-top: 5vw;
+        padding-bottom: 25vw;
+    }
+    .footer-content-box1, .footer-content-box2 {
+        width: 34vw;
+        height: 30vw;
+        align-items: center;
+    }
+    .footer-content h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 5vw;
+    }
+    .footer-content p {
+        font-size: 1.9vw;
+    }
+
+    .fig-google-play img, .fig-app-store img {
+        width: 16.5vw;
+        object-fit: cover;
+    }
+    
+    .fig-star-wars-footer img {
+        width: 20vw;
+    }
+    .line-division-footer {
+        width: 34vw;
+        height: 0.6vw;
+    }
+    .fig-darth-vader {
+        width: 45vw;
+        top: -25vw;
+        left: 30vw;
+    }
+    .fig-darth-vader img {
+        width: 45vw;
     }
 }
