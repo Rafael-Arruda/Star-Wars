@@ -128,7 +128,8 @@ header {
     border-radius: 3.5px;
     cursor: pointer;
 }
-button:hover {
+.card button:hover {
+    opacity: 0.8;
     cursor: pointer;
 }
 
@@ -305,10 +306,10 @@ button:hover {
     background-image: linear-gradient(rgba(255,90,86,0.60), rgba(255,90,86,0.60));
     cursor: pointer;
     transition: 0.4s all;
-    opacity: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    opacity: 0;
 }
 .battle div:hover, .security div:hover, .naves div:hover, .star-game div:hover, .strorm-trup div:hover {
     opacity: 1;
@@ -332,6 +333,9 @@ button:hover {
     padding: 0.5vw 2vw;
     cursor: pointer;
     font-size: 1.2vw;
+}
+.main-box button:hover, .second-box button:hover {
+    opacity: 0.8;
 }
 
 .hierarchy {
@@ -630,40 +634,41 @@ footer {
     .footer-content {
         width: 100%;
         padding-top: 5vw;
-        padding-bottom: 25vw;
+        padding-bottom: 30vw;
     }
     .footer-content-box1, .footer-content-box2 {
-        width: 34vw;
-        height: 30vw;
+        width: 54vw;
+        height: 38vw;
         align-items: center;
     }
     .footer-content h2 {
         width: 100%;
         text-align: center;
-        font-size: 5vw;
+        font-size: 8vw;
     }
     .footer-content p {
-        font-size: 1.9vw;
+        width: 100%;
+        font-size: 2.2vw;
     }
 
     .fig-google-play img, .fig-app-store img {
-        width: 16.5vw;
+        width: 26.5vw;
         object-fit: cover;
     }
     
     .fig-star-wars-footer img {
-        width: 20vw;
+        width: 25vw;
     }
     .line-division-footer {
-        width: 34vw;
+        width: 54vw;
         height: 0.6vw;
     }
     .fig-darth-vader {
-        width: 45vw;
-        top: -25vw;
-        left: 30vw;
+        width: 55vw;
+        top: -30vw;
+        left: 25vw;
     }
     .fig-darth-vader img {
-        width: 45vw;
+        width: 55vw;
     }
 }
