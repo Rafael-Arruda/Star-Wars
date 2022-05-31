@@ -382,15 +382,36 @@ header {
     font-weight: 100;
     font-size: 2.5vw;
 }
-.instructions button {
+.instructions .div-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: black;
     margin-top: 1.5vw;
     color: white;
     width: 10vw;
-    padding:0.8vw 0;
-    font-size: 1.1vw;
+    height: 3vw;
     border: none;
     text-transform: uppercase;
+    overflow: hidden;
+    cursor: pointer;
+}
+.div-button h5 {
+    font-size: 1.1vw;
+    font-weight: 300;
+    z-index: 1;
+}
+.div-background-button {
+    width: 100%;
+    height: 100%;
+    background-color: #ff5a56;
+    position: absolute;
+    right: -10.5vw;
+    transition: 1s all;
+}
+.div-button:hover .div-background-button{
+    right: 0;
 }
 .instructions p {
     width: 7.5vw;
@@ -609,11 +630,16 @@ footer {
     .instructions h2 {
         font-size: 4vw;
     }
-    .instructions button {
+    .instructions .div-button {
         width: 30vw;
-        padding: 2vw 0;
-        font-size: 2.5vw;
+        height: 7vw;
         margin-top: 1vw;
+    }
+    .div-button h5 {
+        font-size: 2.5vw;
+    }
+    .div-background-button {
+        right: -30vw;
     }
     .instructions p {
         width: 20vw;
